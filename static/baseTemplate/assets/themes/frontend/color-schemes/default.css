@@ -1,177 +1,142 @@
-/* Default color schemes */
+/* Default color scheme */
 
-/* Google imports */
-
-/* latin-ext */
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Raleway Light'), local('Raleway-Light'), url(https://fonts.gstatic.com/s/raleway/v12/ZKwULyCG95tk6mOqHQfRBCEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Raleway Light'), local('Raleway-Light'), url(https://fonts.gstatic.com/s/raleway/v12/-_Ctzj9b56b8RgXW8FArifk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-
-
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/K88pR3goAWT7BTt32Z01mxJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/RjgO7rYTmqiVp7vzi-Q5URJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/LWCjsQkB6EMdfHrEVqA1KRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/xozscpT2726on7jbcb_pAhJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
-  unicode-range: U+0370-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/59ZRklaO5bWGqF5A9baEERJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/u-WUoqrET9fUeobQW7jkRRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-
-
-
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 /* General */
 
 body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     color: #3e4855;
     background-color: #fff;
     line-height: 1.42857143;
-    overflow-x: hidden;
 }
-
-#page-wrapper {
-    background: #fff;
+label {
+    color: #3e4855;
 }
-
-/* Fonts weight */
-.tabs-nav li a,
-.main-header .header-nav > li > a,
-.hero-heading,
-.hero-text,
 h1, h2, h3, h4, h5, h6,
-.main-header .header-nav > li > a,
-.hero-heading,
-.hero-text {
+#page-title > h2,
+#page-title > p {
     font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
 }
 
-/* Top bar menu */
+/* Header */
 
-.bg-topbar {
-    background: #fff;
-    border-bottom-color: #eee;
+#page-header .user-account-btn > a.user-profile .glyph-icon,
+.logo-bg {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
 }
-/* Main header */
+#page-header .user-account-btn > a.user-profile {
+    color: #fff;
+}
+/* Header nav left */
+/* Header nav right */
 
-.bg-header {
-    background: #fff;
+#header-nav-right .header-btn .glyph-icon,
+#header-nav-right .dropdown > a .glyph-icon {
+    color: rgb(255, 255, 255);
 }
-.sticky-active .main-header {
-    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.05);
+#header-nav-right .header-btn:hover .glyph-icon,
+#header-nav-right .dropdown > a:hover .glyph-icon {
+    color: rgba(255, 255, 255, 0.95);
 }
-/* Header subnav menu */
+#header-nav-right .header-btn,
+#header-nav-right .dropdown > a {
+    border-color: rgba(255, 255, 255, 0.07);
+}
+#header-nav-right .header-btn:hover,
+#header-nav-right .dropdown > a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+/* Page content */
 
-.main-header .header-nav > li > ul {
-    background: #253035;
+#page-content {
+    background: #fafcfe;
 }
-.main-header .header-nav > li > ul li a:hover {
+/* Sidebar menu */
+
+#page-sidebar ul li.header {
+    color: #fff;
+    background: #293a4a;
+    border: 1px solid #293a4a;
+    background-color: rgba(41,58,74,0.95);
+    border-radius: 5px 5px 0px 0px;
+}
+#page-sidebar ul li a .glyph-icon {
+    color: #0093d9;
+}
+#page-sidebar ul li.sfHover > a.sf-with-ul,
+#page-sidebar ul li a:hover {
+    border-color: #d1d9dd;
+}
+/* Sidebar submenu */
+
+#sidebar-menu li .sidebar-submenu {
+    border-color: #f6f7f8;
+}
+#sidebar-menu li .sidebar-submenu ul li {
+    border-color: #f8f9fa;
+}
+#sidebar-menu li .sidebar-submenu ul li a:hover,
+#sidebar-menu li .sidebar-submenu ul li a.sfActive {
+    background: #fcfdfe;
+}
+
+#sidebar-menu li .sidebar-submenu ul li a.sfActive {
+    color: #1c82e1;
+}
+
+/* Sidebar alternate style */
+
+#page-sidebar.font-inverse {
+
+}
+#page-sidebar.font-inverse ul li.header {
+    color: rgba(255, 255, 255, 0.95);
+}
+#page-sidebar.font-inverse ul li.divider {
+    background: rgba(255, 255, 255, 0.1);
+}
+#page-sidebar.font-inverse #sidebar-menu > li > a {
+    color: rgba(255, 255, 255, 0.62);
+}
+#page-sidebar.font-inverse #sidebar-menu li.sfHover > a.sf-with-ul,
+#page-sidebar.font-inverse #sidebar-menu li a:hover {
+    border-color: rgba(255, 255, 255, 0.26);
+    color: rgba(255, 255, 255, 0.96);
+}
+#page-sidebar.font-inverse #sidebar-menu li .sidebar-submenu {
+    border-color: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.05);
+}
+#page-sidebar.font-inverse #sidebar-menu li a {
+    color: rgba(255, 255, 255, 0.62);
+}
+#page-sidebar.font-inverse #sidebar-menu li a:hover {
+    color: rgba(255, 255, 255, 0.96);
+}
+#page-sidebar.font-inverse#page-sidebar ul li a .glyph-icon {
+    color: rgba(255, 255, 255, 0.8);
+}
+#page-sidebar.font-inverse#page-sidebar ul li a:hover .glyph-icon {
+    color: rgba(255, 255, 255, 1);
+    opacity: .90;
+    -moz-opacity: .90;
+    filter: alpha(opacity: 90);
+}
+#page-sidebar.font-inverse #sidebar-menu li .sidebar-submenu ul li {
+    border-color: rgba(255, 255, 255, 0.07);
+}
+#page-sidebar.font-inverse #sidebar-menu li .sidebar-submenu ul li a:hover {
     background: rgba(255,255,255,0.05);
-    color: #dce4e8;
 }
 
-/* Inverse font color */
 
-.hero-box.font-inverse,
-.top-bar.font-inverse .float-left > a,
-.top-bar.font-inverse .user-profile,
-.main-header.font-inverse .header-logo,
-.main-header.font-inverse .header-nav > li > a,
-.main-header.font-inverse .right-header-btn .search-btn a {
-    color: rgba(255,255,255,0.7);
-}
-.top-bar.font-inverse .user-profile:hover,
-.top-bar.font-inverse .float-left > a:hover,
-.main-header.font-inverse .right-header-btn .search-btn a:hover,
-.main-header.font-inverse .header-nav > li > a:hover {
-    color: rgba(255,255,255,0.9);
-}
-.top-bar.font-inverse .user-info span,
-.thumb-heading.font-inverse {
-    color: #000;
-}
-.main-header.transparent {
-    margin-bottom: -74px;
-}
-/* Responsive */
+/* Admin responsive */
 
-@media only screen and (max-width: 56.25em) {
-    .main-header .header-nav > li > ul li a:hover {
-        color: #1c82e1;
-    }
-    .main-header .header-nav .header {
-        color: #fff;
-        background: #00bca4;
-    }
-    .main-header .header-nav {
-        border-color: #dfe8f1;
-    }
-    .main-header .header-nav > li > ul {
-        background: rgba(37, 48, 53, 0.03);
-    }
-    .main-header .header-nav > li > ul li a:hover {
-        background: #fff;
-    }
-}
+@media only screen and (min-width:20em){#header-logo,#theme-options{display:none}#page-sidebar{transform:translateX(0);-ms-transform:translateX(0);-o-transform:translateX(0);-webkit-transform:translateX(0);visibility:hidden}#page-content{margin-left:0}}@media only screen and (min-width:56.25em){#header-logo,#page-sidebar.collapse,#theme-options{display:block}#mobile-navigation{display:none}#page-sidebar{transform:translateX(0);-ms-transform:translateX(0);-o-transform:translateX(0);-webkit-transform:translateX(0);visibility:visible}#page-content{margin-left:260px}}@media only screen and (max-width:760px){#cloud-btn,#header-nav-right #fullscreen-btn{display:none}}@media only screen and (max-width:630px){#page-header .user-account-btn>a.user-profile span{display:none}#page-header .user-account-btn .dropdown-menu:after,#page-header .user-account-btn .dropdown-menu:before{left:56px}}@media only screen and (max-width:545px){#header-nav-right #chatbox-btn{display:none}}@media only screen and (max-width:520px){#dashnav-btn,#page-header .user-account-btn>a.user-profile span{display:none}.popover{width:100%;border-radius:0}.box-md{width:auto}}@media only screen and (max-width:460px){.box-sm,.timeline-box .popover{width:auto}#page-content{padding:10px}#page-title{padding:10px 0 15px;text-align:center}.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9{margin-bottom:20px}.content-box{margin-top:0!important}.row.mrg20B{margin-bottom:0!important}#page-title p,#progress-btn,.dashboard-box .list-grade,.header-buttons-separator,.todo-box .bs-label,.todo-box .btn,.tooltip .tooltip-arrow{display:none}}@media only screen and (max-width:410px){#header-nav-right #logout-btn,#notifications-btn{display:none}#header-nav-left{float:right}#header-nav-right{margin-right:0;margin-left:15px;float:left}.dropdown-menu{position:fixed;left:0!important;width:100%;border-radius:0}#page-header .user-account-btn .dropdown-menu{top:65px}#page-header .user-account-btn .dropdown-menu:after,#page-header .user-account-btn .dropdown-menu:before{left:auto;right:24px}}
+
